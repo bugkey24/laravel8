@@ -1,0 +1,82 @@
+# Environment
+.env
+.env.backup
+.env.*.local
+.env.production.local
+.env.development.local
+.env.testing.local
+.env.example.local
+
+# Dependencies
+/node_modules
+/vendor
+composer.lock
+package-lock.json
+yarn.lock
+
+# Laravel
+/bootstrap/cache/*
+!/bootstrap/cache/.gitkeep
+/storage/*.key
+/storage/logs/*
+!/storage/logs/.gitkeep
+/public/storage
+/public/hot
+.phpunit.result.cache
+storage.sqlite
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.history
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+.log
+*.log
+Homestead.json
+Homestead.yaml
+
+# Local development
+.docker/
+docker-compose.override.yml
+local.env
+
+# Testing & Coverage
+/tests/coverage/
+.coverage
+*.code-coverage
+.phpunit.cache/
+test-results/
+coverage/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+Thumbs.db
+
+# Common
+.vagrant/
+vagrantfile-*
+*.iml
+.env.local
+.editorconfig.local

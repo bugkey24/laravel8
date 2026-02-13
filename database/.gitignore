@@ -1,0 +1,14 @@
+# SQLite databases
+*.sqlite
+*.sqlite-journal
+*.db
+*.db-shm
+*.db-wal
+
+# Database-specific
+*.pgsql
+*.mysql
+*.sqlserver
+
+# Logs
+*.log
