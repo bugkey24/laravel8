@@ -18,5 +18,6 @@ use App\Http\Controllers\NoteController;
 //     return view('welcome');
 // });
 
-Route::get('/', [NoteController::class, 'index'])->name('notes.index');
-Route::post('/store', [NoteController::class, 'store'])->name('notes.store');
+Route::resource('/', NoteController::class)
+    ->names('notes')
+    ->parameters(['' => 'note']);

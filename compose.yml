@@ -1,8 +1,13 @@
 services:
   app:
     build: .
-    container_name: laravel_app_container
+    container_name: laravel_app
     ports:
       - "8000:80"
     volumes:
       - .:/var/www/html
+    environment:
+      - APP_ENV=local
+      - APP_DEBUG=true
+      - DB_CONNECTION=sqlite
+    restart: unless-stopped
